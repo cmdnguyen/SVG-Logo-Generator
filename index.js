@@ -1,34 +1,17 @@
 const inquirer = require("inquirer");
-const { readFile, writeFile } = require('fs/promises');
-// const shapes = requre("./lib/shapes.js")
+const { writeFile } = require('fs/promises');
+const questions = require("./lib/questions.js")
+const generateSVG = require("./lib/generateSVG.js")
 
 
-inquirer.prompt([
-    {
-        type: "input",
-        name: "text",
-        message: "Please enter your brand initials (cannot be more than 3 characters)"
-    },
-    {
-        type: "list",
-        name: "shape",
-        message: "What shape would you like to use?",
-        choices: ["Triangle", "Square", "Circle"]
-    },
-    {
-        type: "input",
-        name: "shapeColor",
-        message: "What color would you like the shape to be?"
-    },
-    {
-        type: "input",
-        message: "What color would you like the text to be?",
-        name: "textColor",
-        
-    }
-
-]).then((response) => {
+inquirer.prompt(questions)
+.then((response) => {
     console.log(response);
-    console.log("\nGenerated logo.svg!")})
-.catch((error) => console.log(error))
-
+    const svg = generateSVG(response)
+    writeFile("logo.svg", svg)
+    console.log("\nGenerated logo.svg!")
+})
+.catch((error) => {
+    console.log(error);
+    console.log("\nOops! Something went wrong.")
+})
