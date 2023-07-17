@@ -53,9 +53,17 @@ There are two ways to start the program. You can use one of the following comman
 
 It will ask for inputs for the text, text color and shape color. For the "text" input, it cannot be more than three characters or you will see this error:
 
-[TextError]()
+![TextError](/assets/BrandInitialsError.png)
 
 Once you finished the prompts, the console should give you back the user response. Then, it should also say `Generated logo.svg` and created the file.
+
+This is what the code should look like:
+
+![SVGCode](/assets/SVGcode.png)
+
+And this is what the logo should look like
+
+![SVGFile](/assets/SVGfile.png)
 
 If not, it will throw an error and tells you `Oops! Something went wrong.`
 
@@ -96,3 +104,5 @@ You can run the test file in the terminal. Input the following command:
     npm run test
 
 The test is looking for 4 things. The first test should check for a green circle with the text "SVG" in white as the logo. The next three tests should check if it can change the properities.
+
+![ShapesTest](/assets/ShapesTest.png)
