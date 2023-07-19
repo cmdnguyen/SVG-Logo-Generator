@@ -44,8 +44,6 @@ Once everything is installed, you can use the program.
 
 Here's a video demonstrating how the program works.
 
-[SVGLogoGeneratorDemo.webm](https://github.com/cmdnguyen/SVG-Logo-Generator/assets/131038401/82aece7b-d55f-499c-ac26-73f892849e64)
-
 
 There are two ways to start the program. You can use one of the following commands.
 
@@ -98,12 +96,19 @@ SOFTWARE.
 
 ## Tests
 
+Here's a video walkthrough of the running the tests:
+
+
+
 In the `lib` folder, there is a `shapes.test.js` file.
 
 You can run the test file in the terminal. Input the following command:
 
     npm run test
 
-The test is looking for 4 things. The first test should check for a green circle with the text "SVG" in white as the logo. The next three tests should check if it can change the properities.
+The test is looking for 6 things. The first test should check for a circle. The next three tests should check if it can change the properities.
+The remaining test should check if it can create a triangle and a square.
+
+This is what the results should give you:
 
 ![Shapes Test](/assets/ShapesTest.png)
