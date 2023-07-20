@@ -42,8 +42,9 @@ You should also see "test" and "start" in "scripts," which will be used to run t
 
 Once everything is installed, you can use the program. 
 
-Here's a video demonstrating how the program works.
+Here's a video demonstrating how the program works:
 
+[Creating logo.svg.webm](https://github.com/cmdnguyen/SVG-Logo-Generator/assets/131038401/9ae936d5-8fbe-41d6-8271-4e1f1f1b3229)
 
 There are two ways to start the program. You can use one of the following commands.
 
@@ -98,7 +99,7 @@ SOFTWARE.
 
 Here's a video walkthrough of the running the tests:
 
-
+[Running shapes.test.webm](https://github.com/cmdnguyen/SVG-Logo-Generator/assets/131038401/93196816-14bf-4df3-952a-9c0cd71f5c37)
 
 In the `lib` folder, there is a `shapes.test.js` file.
 
